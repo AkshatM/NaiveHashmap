@@ -1,3 +1,5 @@
+_Note_: I made this for fun, and to help demonstrate the power of magic methods in Python. 
+
 #About
 
 This repository implements a hashmap in Python from scratch, with no internal dictionaries, sets, frozensets or other hashtable-like objects inside. It employs two dynamic arrays (lists) to keep the key and the values, with a naive hashfunction being used to compute the index of the value corresponding to a key from the key itself. On a hash collision or after a certain threshold, the list of values is dynamically resized until neither condition is encountered. Constant time lookup (even in the worst case) is guaranteed (although worst case constant time insertion is not, resorting to a linear solution instead).
