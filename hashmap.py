@@ -1,4 +1,3 @@
-import unittest
 import random
 import string
 
@@ -151,16 +150,15 @@ class HashMap(object):
             else: # if there is a value, there's a hash collision again
                 self.__resize__(values = old_values)
 
-# Uncomment the following to see demo.
-
-# s = HashMap()
-# print(s)
-# s['Hello'] = 'World' # indexing!
-# s['Hire'] = 'me' 
-# print(s)
-# for key in s: # tests iteration
-#     print(key, s[key])
-# if 'Hire' in s: # tests membership
-#     print("Thanks!")
-# s['Hire'] = "ME!" # updating element
-# print(s) 
+if __name__ == '__main__':
+    s = HashMap()
+    print(s)
+    s['Hello'] = 'World'
+    s['Lettuce'] = 'orange' 
+    print(s)
+    for key in s: # tests iteration
+        print(key, s[key])
+    if 'Lettuce' in s: # tests membership
+        print("Thanks!")
+    s['Hellow'] = "WORLD!" # updating element
+    print(s) 
